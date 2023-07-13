@@ -1,0 +1,90 @@
+.ordersList {
+  background: #fff;
+  padding: 16px;
+}
+.svgShop {
+  svg {
+    transform: scale(0.8);
+  }
+}
+.service {
+  display: flex;
+  color: rgb(53, 157, 217);
+  font-weight: 700;
+  align-items: center;
+
+  svg {
+    margin-right: 4px;
+    path {
+      fill: rgb(53, 157, 217);
+    }
+  }
+}
+
+.ordersTable {
+  margin-top: 8px;
+}
+.mainStatusTabs {
+  display: flex;
+  margin-top: 16px;
+  margin-left: -1px;
+  .mainStatus {
+    border: 1px solid #f0f2f5;
+    background: #f0f2f5;
+    color: #808a94;
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+
+  .activeMainStatus {
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+.editIconOrders {
+  margin-left: 8px;
+  cursor: pointer;
+  svg path {
+    fill: rgb(53, 157, 217);
+  }
+}
+
+.orderInformationHeader {
+  display: flex;
+  align-items: center;
+  .orderInformationHeader-status {
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 2px 9px;
+    color: #fff;
+  }
+  .orderInformationHeader-code {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.ant-modal.modalOrderInformation {
+  height: 100vh;
+  top: 50px;
+
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+  .ant-modal-content {
+  }
+}
+
+.ant-modal.modalInformationOrder {
+  width: 90% !important;
+
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+}

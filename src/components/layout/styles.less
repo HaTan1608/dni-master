@@ -1,0 +1,145 @@
+@import "../../styles/variable.less";
+
+.parent-menu {
+  // width:100px;
+  // background-color: blue;
+  // padding:10px 10px 10px 10px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.parent-menu:hover {
+  // width:100px;
+  // background-color: @neutral_color_1_6;
+  cursor: pointer;
+  // padding:10px 10px 10px 10px;
+  // padding-left: 10px;
+  // cursor: pointer;
+}
+.parent-menu span:hover {
+  color: @accent_color_5_5;
+}
+.child-menu {
+  // width:100px;
+  // background-color: blue;
+  padding: 10px 15px 10px 10px;
+  // padding: 15px 0px;
+  cursor: pointer;
+}
+
+.child-menu:hover {
+  // width:100px;
+  // background-color: @accent_color_5_5;
+  cursor: pointer;
+  // padding:10px 10px 10px 10px;
+  // padding-left: 10px;
+  // cursor: pointer;
+}
+
+.child-menu span:hover {
+  color: @accent_color_5_5;
+}
+
+.child-menu-click {
+  padding: 10px 15px 10px 10px;
+  // border-left: 4px solid @primary_color_1_1;
+  // background-color: @neutral_color_1_6;
+  cursor: pointer;
+  background: #fff;
+  svg path {
+    fill: @accent_color_5_5!important;
+  }
+  .titleMenu {
+    color: @accent_color_5_5;
+  }
+}
+
+.titleMenu {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14;
+  color: @neutral_color_1_8;
+}
+
+.iconLeft {
+  margin-left: 20px;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+.iconLeft.active {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+.titleParentMenu {
+  color: #fff;
+  font-size: 16px;
+}
+.headerParent {
+  padding: 10px;
+  // width:'100%';
+  width: 200px;
+  background-color: @neutral_color_1_1;
+  position: absolute;
+}
+
+.contentHeader-left {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.headerAll-content {
+  border: 1px solid "red";
+  // background-color: red;
+}
+.scaled-logo {
+  transform: scale(0.4); /* Equal to scaleX(0.7) scaleY(0.7) */
+  // background-color: @neutral_color_1_7;
+}
+
+.dashboardLink {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 4px 16px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  height: 41px;
+  color: @neutral_color_1_8 !important;
+  svg {
+    margin-right: 8px;
+    g path {
+      fill: #fff;
+    }
+  }
+}
+.dashboardLink span:hover {
+  color: @accent_color_5_5;
+}
+.dashboardLink.activeLink {
+  background: #fff;
+  svg path {
+    fill: @accent_color_5_5;
+  }
+  .db-title {
+    color: @accent_color_5_5;
+  }
+}
+.button_navBar {
+  width: 100%;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.sidenav {
+  position: fixed;
+  width: 260px;
+  overflow-y: scroll;
+}
+
+.icon .iconLeft svg path {
+  fill: #fff;
+}

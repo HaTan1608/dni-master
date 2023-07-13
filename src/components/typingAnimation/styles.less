@@ -1,0 +1,76 @@
+.overlaySpinner12 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  .waveLoading12 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    div {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 4px;
+      opacity: 0;
+      animation: animateTest 0.5s ease-in-out calc(1s * var(--c)) 1,
+        animateTestParent 1s ease-in-out 12s 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes animateTest {
+      0% {
+        left: -200px;
+        opacity: 0;
+      }
+      100% {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+  @keyframes animateTestParent {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.finishAnimation {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  animation: animateTestParent2 1s ease-in-out 13s 1;
+  animation-fill-mode: forwards;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-200px);
+  font-size: 24ox;
+  color: #fff;
+  @keyframes animateTestParent2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

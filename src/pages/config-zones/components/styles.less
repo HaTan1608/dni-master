@@ -1,0 +1,130 @@
+.modalAddStores {
+  .ant-modal-title {
+    color: #be1e2d;
+  }
+  .modalAddStores__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -7px;
+    margin-bottom: 20px;
+    h4 {
+      width: 100%;
+    }
+  }
+  .addStores__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 8px;
+    .addStores__footer__btn {
+      margin-right: 8px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      min-width: 120px;
+      svg {
+        margin-right: 8px;
+      }
+      &.addBtn {
+        background: #2d9cdb;
+      }
+      &.editBtn {
+        background: #2d9cdb;
+      }
+    }
+    .statusBtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 16px;
+      width: 127px;
+      height: 32px;
+      padding: 2px;
+      background: #f0f2f5;
+      border: solid 1px #c1c1c1;
+      border-radius: 5px;
+      span {
+        width: 50%;
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      span.mainBtn {
+        background: #2d9cdb;
+        border-radius: 5px;
+        color: white;
+      }
+      span.falseBtn {
+        background: rgb(191, 196, 201);
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+  .rangepickertime {
+    height: 41px;
+    width: calc((100% - 32px) / 3);
+    margin-top: 16px;
+    &__label {
+      font-size: 14px;
+    }
+    .ant-row.ant-form-item {
+      width: 100%;
+      height: 100%;
+    }
+    .ant-form-item-control-input {
+      height: 41px;
+      .ant-form-item-control-input-content {
+        height: 41px;
+      }
+    }
+    .ant-picker.ant-picker-range {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      margin: 0;
+    }
+  }
+}
+
+.modalAddCustomer__content {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  h4 {
+    width: 100%;
+  }
+  .rangepickertime {
+    height: 41px;
+    width: 33%;
+    margin-top: 16px;
+    &__label {
+      font-size: 12px;
+    }
+    .ant-row.ant-form-item {
+      width: 100%;
+      height: 100%;
+    }
+    .ant-form-item-control-input {
+      height: 41px;
+      .ant-form-item-control-input-content {
+        height: 41px;
+      }
+    }
+    .ant-picker.ant-picker-range {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

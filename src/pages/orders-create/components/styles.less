@@ -1,0 +1,197 @@
+@import "../../../styles/variable.less";
+
+.senderInformation {
+  .btnGroupOrdersCreate {
+    display: flex;
+    margin-top: 4px;
+    .defaultBtn {
+      color: rgb(159, 167, 174);
+      border: solid 1px rgb(159, 167, 174);
+      border-radius: 5px;
+      padding: 4px 12px;
+      margin-right: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-right: 8px;
+        path {
+          fill: rgb(159, 167, 174);
+        }
+      }
+    }
+    .activeBtn {
+      color: #fff;
+      background: @accent_color_5_6;
+      border: solid 1px @accent_color_5_6;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .senderInformation-row {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.receiverInformation {
+  .btnGroupOrdersCreate {
+    display: flex;
+    margin-top: 4px;
+
+    .defaultBtn {
+      color: rgb(159, 167, 174);
+      border: solid 1px rgb(159, 167, 174);
+      border-radius: 5px;
+      padding: 4px 12px;
+      margin-right: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-right: 8px;
+        path {
+          fill: rgb(159, 167, 174);
+        }
+      }
+    }
+    .activeBtn {
+      color: #fff;
+      background: @accent_color_5_6;
+      border: solid 1px @accent_color_5_6;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .receiverInformation-row {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.commodityInformation {
+  .commodityInformation-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .services-label {
+      position: absolute;
+      bottom: 100%;
+      font-weight: 500;
+    }
+  }
+  .commodityInformation-services {
+    display: flex;
+    align-items: center;
+    height: 41px;
+    .service {
+      color: rgb(159, 167, 174);
+      border: solid 1px rgb(159, 167, 174);
+      border-radius: 5px;
+      padding: 4px 12px;
+      margin-right: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .activeService {
+      color: #fff;
+      background: @accent_color_5_6;
+      border: solid 1px @accent_color_5_6;
+    }
+  }
+}
+
+.otherInformation {
+  margin: 8px 0;
+}
+
+.totalInformation {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 238px);
+  right: 0;
+  height: 70px;
+  background: #fff;
+  border: solid 1px #dfe2e4;
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .totalInformation-left {
+    display: flex;
+    width: 50%;
+
+    .informationSvg {
+      position: relative;
+      cursor: pointer;
+      .information {
+        position: absolute;
+        bottom: calc(100% + 24px);
+        left: 0;
+        padding: 8px;
+        background: #fff;
+        border: 1px solid #bfc4c9;
+        border-radius: 5px;
+        width: 300px;
+      }
+      svg {
+        display: inline-block;
+        margin-right: 4px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .totalInformation-right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    .resetBtn {
+      background: #f0f2f5;
+      border: 1px solid #bfc4c9;
+      color: #bfc4c9;
+      border-radius: 5px;
+      height: 40px;
+      padding: 4px 12px;
+      margin-left: 16px;
+      min-width: 100px;
+    }
+    .submitBtn {
+      background: #0f5c97;
+      border: 1px solid #0f5c97;
+      color: #fff;
+      border-radius: 5px;
+      height: 40px;
+      padding: 4px 12px;
+      margin-left: 16px;
+      min-width: 100px;
+    }
+  }
+}
+
+.warehouseRow {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  transition: background .2s;
+}
+
+.warehouseRow:hover {
+  background: rgb(235, 235, 235);
+  transition: background .2s;
+}

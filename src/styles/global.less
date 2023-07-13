@@ -1,0 +1,264 @@
+// @import '~antd/es/style/themes/default.less';
+@import "./formStyles.less";
+@import "./variable.less";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.divSpanHover:hover {
+  // background-color: red;
+  color: @accent_color_4_3;
+}
+
+.ant-notification {
+  z-index: 99999;
+}
+
+.contentBody {
+  // margin-top: 15px;
+  border-radius: 5px;
+  padding: 16px;
+  // height: 100%;
+  width: 100%;
+  background-color: @neutral_color_1_8;
+}
+
+.ant-modal-root,
+.ant-modal-mask,
+.ant-modal-wrap {
+  z-index: 97 !important;
+}
+
+/////// style row
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col-0 {
+  display: none;
+}
+
+.col-1 {
+  width: (100% / 12) * 1;
+}
+.col-2 {
+  width: (100% / 12) * 2;
+}
+.col-3 {
+  width: (100% / 12) * 3;
+}
+.col-4 {
+  width: (100% / 12) * 4;
+}
+.col-5 {
+  width: (100% / 12) * 5;
+}
+.col-6 {
+  width: (100% / 12) * 6;
+}
+.col-7 {
+  width: (100% / 12) * 7;
+}
+.col-8 {
+  width: (100% / 12) * 8;
+}
+.col-9 {
+  width: (100% / 12) * 9;
+}
+.col-10 {
+  width: (100% / 12) * 10;
+}
+.col-11 {
+  width: (100% / 12) * 11;
+}
+.col-12 {
+  width: (100% / 12) * 12;
+}
+
+.globalButton {
+  width: 120px;
+  height: 41px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  background: var(--background);
+}
+
+.animationButton {
+  position: relative;
+}
+
+.animationButton::before,
+.animationButton::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: transparent;
+  border: 1px solid var(--borderColor);
+  left: 0;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.animationButton:hover::before {
+  animation: identifier 1s infinite;
+}
+
+.animationButton:hover::after {
+  animation: identifier 0.5s infinite;
+}
+
+@keyframes identifier {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.breakOneLine {
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10px;
+}
+.breakTwoLine {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 10px;
+  @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.ant-select-item-option-content {
+  white-space: unset;
+}
+
+.addStores__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 8px;
+  .addStores__footer__btn {
+    margin-right: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 120px;
+    svg {
+      margin-right: 8px;
+    }
+    &.addBtn {
+      background: #2d9cdb;
+    }
+    &.editBtn {
+      background: #2d9cdb;
+    }
+  }
+  .statusBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+    width: 127px;
+    height: 32px;
+    padding: 2px;
+    background: #f0f2f5;
+    border: solid 1px #c1c1c1;
+    border-radius: 5px;
+    span {
+      width: 50%;
+      height: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span.mainBtn {
+      background: #2d9cdb;
+      border-radius: 5px;
+      color: white;
+    }
+    span.falseBtn {
+      background: rgb(191, 196, 201);
+      border-radius: 5px;
+      color: white;
+    }
+  }
+}
+
+.dottedPrint {
+  border-bottom: 1px dashed #999;
+  text-decoration: none;
+}
+
+.barcodePrint {
+  text {
+    width: 100%;
+  }
+}
+.centerModal {
+  transform: translateY(-50%);
+  top: 50%;
+  animation-delay: 1;
+}
+
+.checkboxUserGroup {
+  margin-left: 24px;
+}
+.endChild {
+  .ant-checkbox-wrapper.ant-checkbox-wrapper-checked.ant-checkbox-group-item,
+  .ant-checkbox-wrapper.ant-checkbox-group-item {
+    width: 100%;
+  }
+}

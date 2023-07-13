@@ -1,0 +1,82 @@
+@import "../../styles/variable.less";
+.subHeader {
+  .btnGroup {
+    display: flex;
+    button {
+      margin-left: 16px;
+    }
+  }
+  .mainLink {
+    font-size: 14px;
+    font-weight: 600;
+    color: @accent_color_5_1;
+  }
+  .backBtn {
+    background: @neutral_color_1_2;
+    /* Neutral Color 1.4 */
+
+    border: 1px solid @neutral_color_1_2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: @primary_color_1_1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    height: 40px;
+    width: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 6px 8px 0 0;
+
+      width: 20px;
+      height: 20px;
+      transform: rotate(90deg);
+      path {
+        fill: @primary_color_1_1;
+      }
+    }
+  }
+
+  .mainBtn {
+    background: @accent_color_5_1;
+    /* Blue 2 */
+    color: @neutral_color_1_8;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid @accent_color_5_1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    min-width: 138px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      path {
+        fill: @neutral_color_1_8;
+      }
+    }
+  }
+  .plusSvg {
+    svg {
+      margin-bottom: 4px;
+      transform: scale(0.8);
+      path {
+        fill: @neutral_color_1_8;
+      }
+    }
+  }
+
+  a.subLink:hover {
+    color: red !important;
+  }
+}

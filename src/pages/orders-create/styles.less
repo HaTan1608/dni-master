@@ -1,0 +1,93 @@
+@import "../../styles/variable.less";
+.ordersCreate {
+  .leftContainer {
+    width: calc(50% - 8px);
+  }
+  .rightContainer {
+    width: calc(50% - 8px);
+  }
+  .svgShop {
+    transform: scale(0.8);
+  }
+}
+
+.containerCreate {
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  border-radius: 5px;
+
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.receiverInformation {
+  .btnGroupOrdersCreate {
+    display: flex;
+    .defaultBtn {
+      color: rgb(159, 167, 174);
+      border: solid 1px rgb(159, 167, 174);
+      border-radius: 5px;
+      padding: 4px 12px;
+      margin-right: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-right: 8px;
+        path {
+          fill: rgb(159, 167, 174);
+        }
+      }
+    }
+    .activeBtn {
+      color: #fff;
+      background: @accent_color_5_6;
+      border: solid 1px @accent_color_5_6;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+
+.commodityInformation {
+  margin: 16px 0 0 0;
+}
+
+.otherInformation {
+  margin: 16px 0 0 0;
+}
+
+.dropdownProducts {
+  position: relative;
+  &__content {
+    position: absolute;
+    padding: 8px;
+    z-index: 99;
+    height: 320px;
+    width: 100%;
+    background: #fff;
+    border: solid 1px rgb(191, 196, 201);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    overflow-y: scroll;
+
+    &__body {
+      &__user {
+        padding: 4px 9px;
+        cursor: pointer;
+        color: #000;
+        transition: color 0.2s;
+      }
+      &__user:hover {
+        color: cornflowerblue;
+        transition: color 0.2s;
+      }
+    }
+  }
+}

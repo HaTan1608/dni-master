@@ -1,0 +1,8 @@
+const shopTypes = {
+  START_GET_LIST_SHOP: 'START_GET_LIST_SHOP',
+  GET_LIST_SHOP_SUCCESS: 'GET_LIST_SHOP_SUCCESS',
+  GET_LIST_SHOP_FAILURE: 'GET_LIST_SHOP_FAILURE',
+
+}
+
+export default shopTypes;

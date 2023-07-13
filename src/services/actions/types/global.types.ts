@@ -1,0 +1,8 @@
+const globalTypes = {
+  CHANGE_THEME: 'CHANGE_THEME',
+  OTHER_ACTION: 'OTHER_ACTION',
+  START_PUT_SIGN_IN_APP: 'START_PUT_SIGN_IN_APP',
+  PUT_SIGN_IN_APP_SUCCESS: 'PUT_SIGN_IN_APP_SUCCESS'
+}
+
+export default globalTypes;
